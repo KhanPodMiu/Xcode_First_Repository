@@ -8,18 +8,11 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cmath>
 
 using namespace std;
 
 int main() {
-    ofstream fout("/Users/voann/Desktop/Code/Folder_data/num.txt");
-    if (!fout.is_open()) {
-        cerr << "Error" << endl;
-        return 1;
-    }
-    
-    for(int i =2; i<=102; i+=2){
-        fout << i << endl;
-    }
-    
+    double a =10.5, b  = 3.2;
+    cout << fmod(a,b) << endl;
 }
